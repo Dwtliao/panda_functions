@@ -15,5 +15,10 @@ def np_sum_row_columns(array_in):
 def np_sum_each_column(array_in):
     #add the row values of each column and return 1 row of each column's total sum
     return np.sum(array_in, axis=0)
-    
+
+testarray = [[0, 1], [0, 5]]
+print np_sum_row_columns(testarray)
+[1 5]
+print np_sum_each_column(testarray)
+[0 6]
 ```
